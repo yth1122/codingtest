@@ -1,11 +1,8 @@
 
 function solution(){
-  let s = "banana"	
-  let answer = [];
-  for(let i=0; i<s.length; i++){
-    
-  }
-  return answer
+  var answer=[];
+  
+  console.log(answer);
 }
 
 module.exports = solution;
