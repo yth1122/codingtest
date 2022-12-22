@@ -1,6 +1,6 @@
 
-function solution(){
-    let s = "abracadabra";
+function solution(s){
+    // let s = "abracadabra";
     let result = 0;
     let fix = '';
     // 같은카운트
