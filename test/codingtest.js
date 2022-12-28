@@ -1,6 +1,11 @@
+function solution(){
+  
+  let answer = 1;
+ 
+  return answer;
 
-function solution(X){
-  return X
 }
 
+
 module.exports = solution;
+ 
