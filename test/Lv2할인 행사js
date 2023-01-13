@@ -1,0 +1,22 @@
+// https://school.programmers.co.kr/learn/courses/30/lessons/131127
+function solution(want, number, discount) {
+    var answer = 0;
+     for(let i=0; i<discount.length - 9; i++){
+        let x = [];
+        let arr = discount.slice(i,10+i);
+        for(let j=0; j<want.length ; j++){
+            if(arr.filter(t=>t==want[j]).length == number[j]){
+                x.push(true);
+            }else{
+                break;
+            }
+        }
+        if(x.length==want.length){
+            answer += 1;
+        }
+     }
+    return answer;
+}
+
+
+

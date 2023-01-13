@@ -19,7 +19,7 @@ function solution(n){
 }
 
 
-// 파보나치수로 접근 통과
+// 파보나치수로 접근 정답 
 function solution(n) {
   let arr  = new Array(n).fill(0);
   arr[0] = 1;

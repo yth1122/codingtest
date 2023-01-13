@@ -1,0 +1,49 @@
+// https://school.programmers.co.kr/learn/courses/30/lessons/135807
+// 시간초과
+function solution(arrayA, arrayB) {
+    arrayA= [10,20];
+    arrayB= [5,17];
+    var answer = 0;
+    let obj = {};
+    let arr = [];
+    for(let i=0; i<arrayA.length; i++){
+        for(let j=1; j<=Math.sqrt(arrayA[i]); j++){
+            if(arrayA[i]%j==0){
+                let x = arrayA[i]/j;
+                if(x !=j){
+                    obj[x] = (obj[x]| 0) +1; 
+                }
+                obj[j] = (obj[j]| 0) +1;
+            }
+        }
+    }
+    for(let i=0; i<arrayB.length; i++){
+        for(let j=1; j<=Math.sqrt(arrayB[i]); j++){
+            if(arrayB[i]%j==0){
+                let x = arrayB[i]/j;
+                if(x !=j){
+                    obj[x] = (obj[x]| 0) +1; 
+                }
+                obj[j] = (obj[j]| 0) +1;
+            }
+        }
+    }
+    
+    for(let key in obj){
+        if(obj[key]==arrayA.length){
+            arr.push(parseInt(key));
+        }
+    }
+
+ 
+
+
+
+    // return answer;
+}
+
+
+
+
+
+module.exports = solution;
