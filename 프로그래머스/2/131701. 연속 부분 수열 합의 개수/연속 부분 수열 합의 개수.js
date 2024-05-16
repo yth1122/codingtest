@@ -2,12 +2,13 @@ function solution(elements) {
     
     let set = new Set(elements);
 	let cursor = 0,check = 0,num=elements[0];
+    set.add(elements.reduce((acc,t)=> acc+t ,0));
 	while(elements.length != check){
 		cursor+=1;
 		num += elements[cursor];
 		set.add(num);
 		
-		if(cursor == elements.length-1){
+		if(cursor == elements.length-2){
 			
 			cursor = 0;
 			elements.push(elements.shift());
