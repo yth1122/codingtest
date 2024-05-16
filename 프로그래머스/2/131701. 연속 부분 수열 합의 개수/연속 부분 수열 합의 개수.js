@@ -1,8 +1,10 @@
 function solution(elements) {
-    
+    //최초 1개씩 set에 추가    
     let set = new Set(elements);
+    // cursor 배열의 index, check elements      
 	let cursor = 0,check = 0,num=elements[0];
-    set.add(elements.reduce((acc,t)=> acc+t ,0));
+    //배열의 전체를 더해서 추가     
+    set.add(elements.reduce((a,b) => a+b ,0))
 	while(elements.length != check){
 		cursor+=1;
 		num += elements[cursor];
