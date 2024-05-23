@@ -1,7 +1,13 @@
-//https://school.programmers.co.kr/learn/courses/30/lessons/138476 귤고르기
-function solution() {
+	function test() {
+		
+		console.log(solution())
+	}
 
-}
+	function solution() {
+	
+	}
 
 
-module.exports = solution;
+
+
+module.exports = test;
