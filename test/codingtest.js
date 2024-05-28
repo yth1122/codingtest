@@ -1,12 +1,8 @@
 	function test() {
-
-	
 	}
 
 	
 	function solution() {
-		
-	
 	}
 
 
