@@ -1,7 +1,6 @@
 	function test() {
-	}
-
 	
+	}
 	function solution() {
 	}
 
