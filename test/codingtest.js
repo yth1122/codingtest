@@ -3,7 +3,7 @@
 		console.log(solution(3,4,17));
 	}
 	
-
+// https://www.acmicpc.net/problem/2178
 	function solution(n,l,r) {
 		// let start = '1';
 		// let result = 0;
