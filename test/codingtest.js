@@ -2,12 +2,12 @@
 	function test() {
 		console.log(solution(3,4,17));
 	}
-	
+
 // https://www.acmicpc.net/problem/2178
 	function solution(n,l,r) {
 		// let start = '1';
 		// let result = 0;
-		// while(n>0){1234
+		// while(n>0){
 		// 	n-=1;
 		// 	start = start.split('0').join('00000').split('1').join('11011');
 		// }
