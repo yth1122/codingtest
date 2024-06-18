@@ -5,6 +5,17 @@
 
 // https://www.acmicpc.net/problem/2178
 	function solution(n,l,r) {
+		let input = ['but','i','wont','hesitate','no','more','no','it','cannot','wait','im','yours'];
+		input = [...new Set(input)];
+		
+		input.sort((a,b)=> {
+			if(a.length!=b.length){
+				return a.length - b.length
+			}else{
+				return a.localeCompare(b)
+			}
+		} )
+		console.log(input.join('\n'));
 		// let start = '1';
 		// let result = 0;
 		// while(n>0){
