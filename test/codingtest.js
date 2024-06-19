@@ -5,17 +5,29 @@
 
 // https://www.acmicpc.net/problem/2178
 	function solution(n,l,r) {
-		let input = ['but','i','wont','hesitate','no','more','no','it','cannot','wait','im','yours'];
-		input = [...new Set(input)];
-		
-		input.sort((a,b)=> {
-			if(a.length!=b.length){
-				return a.length - b.length
+		let x = `5
+7
+3 8
+8 1 0
+2 7 4 4
+4 5 2 6 5`;
+		console.log(x.split('\n').map(t=>t.split(' ')));
+		let input =[[5],[7],[3,8],[8,1,0],[2,7,4,4],[4,5,2,6,5]];
+		let result =[];
+		input.shift();
+		console.log(input);
+		function dfs(position,sum){
+			let [x,y] = position;
+			if(y == input.length-1){
+				result.push(sum)
 			}else{
-				return a.localeCompare(b)
+				
 			}
-		} )
-		console.log(input.join('\n'));
+		}
+
+		console.log(dfs([0,0],0));
+
+
 		// let start = '1';
 		// let result = 0;
 		// while(n>0){
