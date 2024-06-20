@@ -5,26 +5,15 @@
 
 // https://www.acmicpc.net/problem/2178
 	function solution(n,l,r) {
-		let input = '11';
-		let count = 0;
-		while(input > 0){
-			let sqrt =	Math.floor(Math.sqrt(+input));
-			input -= Math.pow(sqrt,2);
-			count+=1;
+		let input = '7';
+		let dp = Array.from({length:+input+1}).map((t,i)=>i);
+		console.log(dp);
+		for(let i=1; i<= +input; i++){
+			for(let j=1; j**2<=i; j++){
+				console.log(i,j,i-j**2,dp[i],dp[i-j**2]+1);
+				dp[i]=Math.min(dp[i],dp[i-j**2]+1);
+			}
 		}
-		console.log(count);
-		// let start = '1';
-		// let result = 0;
-		// while(n>0){
-		// 	n-=1;
-		// 	start = start.split('0').join('00000').split('1').join('11011');
-		// }
-		// for(let i =l-1; i<r;i++ ){
-		// 	console.log(start[i]);
-		// 	result+= +start[i];
-		// }
-		// console.log(start);
-		
 	}
 
 module.exports = test;
