@@ -5,29 +5,14 @@
 
 // https://www.acmicpc.net/problem/2178
 	function solution(n,l,r) {
-		let x = `5
-7
-3 8
-8 1 0
-2 7 4 4
-4 5 2 6 5`;
-		console.log(x.split('\n').map(t=>t.split(' ')));
-		let input =[[5],[7],[3,8],[8,1,0],[2,7,4,4],[4,5,2,6,5]];
-		let result =[];
-		input.shift();
-		console.log(input);
-		function dfs(position,sum){
-			let [x,y] = position;
-			if(y == input.length-1){
-				result.push(sum)
-			}else{
-				
-			}
+		let input = '11';
+		let count = 0;
+		while(input > 0){
+			let sqrt =	Math.floor(Math.sqrt(+input));
+			input -= Math.pow(sqrt,2);
+			count+=1;
 		}
-
-		console.log(dfs([0,0],0));
-
-
+		console.log(count);
 		// let start = '1';
 		// let result = 0;
 		// while(n>0){
@@ -39,6 +24,7 @@
 		// 	result+= +start[i];
 		// }
 		// console.log(start);
+		
 	}
 
 module.exports = test;

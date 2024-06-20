@@ -31,8 +31,7 @@ function solution(maps) {
 				check[curX][curY] = false;	
 			} 
 		}
-
-		
+	
 		
 	}
 	work([0,0],1);
