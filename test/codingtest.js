@@ -5,8 +5,6 @@
 
 // https://www.acmicpc.net/problem/2178
 	function solution(n,l,r) {
-	
-
 	}
 
 module.exports = test;
