@@ -5,15 +5,6 @@
 
 // https://www.acmicpc.net/problem/2178
 	function solution(n,l,r) {
-		// 오르막수 11057
-		let input = 
-`2 7
-3 5`		
-		input = input.split('\n').map(t=>t.split(' ').map(Number));
-		let first = input[0];
-		let second = input[1];
-		console.log( first);
-		// fistone * secondtwo + secondone * firsttwo / secondtwo * firsttwo and gcd divide
 	}
 
 module.exports = test;
