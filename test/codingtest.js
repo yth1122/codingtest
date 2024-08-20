@@ -7,8 +7,8 @@
 		let input = '(()[[]])([])'.split('');
 		console.log(input);
 		let stack = [];
-		for(let i=0; i < input; i++){
-			if(key == '(' || key == '['){
+		for(let i=0; i < input.length; i++){
+			if(input[i] == '(' || input[i] == '['){
 				stack.push(input[i]);
 			}else{
 
