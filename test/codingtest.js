@@ -1,11 +1,10 @@
 	// 
 	function test() {
-		console.log(solution(3,4,17));
+		console.log(solution());
 	}
 
-	function solution(n,l,r) {
+	function solution() {
 		let input = '(()[[]])([])'.split('');
-		console.log(input);
 		let stack = [];
 		for(let i=0; i < input.length; i++){
 			if(input[i] == '(' || input[i] == '['){
