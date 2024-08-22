@@ -10,6 +10,10 @@
 			if(input[i] == '(' || input[i] == '['){
 				stack.push(input[i]);
 			}else{
+				if(input[i]==')'){
+					stack.pop();
+				}
+				
 
 			}
 		}
