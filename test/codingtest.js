@@ -9,11 +9,13 @@
 		for(let i=0; i < input.length; i++){
 			if(input[i] == '(' || input[i] == '['){
 				stack.push(input[i]);
-			}else{
-				if(input[i]==')' || input[i]==']'){
-					stack.pop();
+			}else if(input[i]==')' || input[i]==']'){
+				let check = stack[stack.length-1];
+				if(check == ']'){
+
+				}else if(check == ''){
+
 				}
-				
 
 			}
 		}
