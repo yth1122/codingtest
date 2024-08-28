@@ -13,7 +13,7 @@
 				let check = stack[stack.length-1];
 				if(check == ']'){
 
-				}else if(check == ''){
+				}else if(check == ')'){
 
 				}
 
