@@ -4,55 +4,120 @@
 	}
 
 	function solution() {
-		let input = '(()[[]])([])'.split('');
-		let stack = [];
-
-		if(available(input)){
-			for(let i=0; i < input.length; i++){
-				if(input[i] == '(' || input[i] == '['){
-					stack.push(input[i]);
-				}else if(input[i]==')' || input[i]==']'){
-					let check = stack[stack.length-1];
-					if(check == '[' && input[i] == ']'){
-						stack.pop();
-						stack.push(3);
-					}else if(check == '(' && input[i] == ')'){
-						stack.pop();
-						stack.push(2);
-					}else{
-						let num = 0;
-						
-						while(1){
-							let last = stack.pop();
-							// console.log('ji');
-							break;
-						}
-					}
-	
-				}
-				// console.log(stack);
+		let input=
+`100 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10
+1 10`.split('\n');
+		// console.log(input);
+		input = input.map(t=>t.split(' ').map(Number));
+		let [count, goal] = input.shift();
+		let dp = Array.from({length:goal+1}).map(t=>[0,0]);
+		for(let i=0; i<count; i++){
+			for(let j=0; j<goal; j++){
 			}
-		}else{
-			console.log(0);
 		}
+
+		console.log(dp);
 	}
-		
-	
-	function available(input){
-			let check = [];
-			for(let i=0; i<input.length; i++){
-				let prev= check[check.length-1];
-				if(input[i]==')' && prev == '(' ){
-					check.pop();
-				}else if(input[i]==']' && prev == '['){
-					check.pop();
-				}else{
-					check.push(input[i]);
-				}
-				console.log(check);
-			}
-			return check.length ? false: true;	
-	}
+
 		
 	
 
