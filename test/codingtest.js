@@ -11,7 +11,8 @@ GGBBB
 BBBRR
 BBRRR
 RRRRR`.split('\n');
-		
+		input.shift();
+		console.log(input);
 	}
 		
 	
