@@ -11,8 +11,10 @@ GGBBB
 BBBRR
 BBRRR
 RRRRR`.split('\n');
-		input.shift();
-		console.log(input);
+		let length = input.shift();
+		input =  input.map(t=>t.split(''));
+		let visit = Array.from({length:length},()=>Array.from({length:length}).fill(false));
+		console.log(visit);
 	}
 		
 	
