@@ -5,13 +5,7 @@
 
 	function solution() {
 		let input =
-`5
-RRRBB
-GGBBB
-BBBRR
-BBRRR
-RRRRR`.split('\n');
-		
+`3`;
 	}
 		
 	
