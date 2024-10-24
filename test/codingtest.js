@@ -4,15 +4,11 @@
 	}
 
 	function solution() {
-		let input =['a','b','c'];
-		let input2 = 'stt';
-		let input3 = new String('stt')
-		// trans(input2);
-		console.log(input2 === input3,input3);
+		let input = 
+`ACAYKP
+CAPCAK`.split('\n');
+		
 	}	
 
-	function trans(arr){
-		arr ='good'
-	}
 
 module.exports = test;
