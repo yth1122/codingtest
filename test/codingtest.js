@@ -4,10 +4,8 @@
 	}
 
 	function solution() {
-		let input = 
-`ACAYKP
-CAPCAK`.split('\n');
-		
+		let input = '';
+		console.log(input);
 	}	
 
 
