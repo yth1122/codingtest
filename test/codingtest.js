@@ -5,12 +5,13 @@
 
 	function solution() {
 		let input =
-`5
-6 9 5 7 4`.split('\n');
-		let count = input.shift();
-		input = input[0].split(' ').map(Number);	
-		let arr = Array.from({length:count}).fill(0);	
-	
+`6 4`;
+		console.log(input);
+		let [size,count] = input.split(' ').map(Number);
+		console.log(size,count);
+		// 0 ~ size count로 묶어서 덧셈
+		let dp = Array.from({length:count+1},()=> Array.from({length:size+1}).fill(0));
+		console.log(dp);
 	}	
 
 
