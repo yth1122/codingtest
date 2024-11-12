@@ -10,7 +10,7 @@
 		let [size,count] = input.split(' ').map(Number);
 		// 0 ~ size count로 묶어서 덧셈
 		let dp = Array.from({length:size+1},()=> Array.from({length:count+1}).fill(0));
-		
+		console.log(dp);
 		for (let j = 1; j <= count; j++) {
 			dp[0][j] = 1; 
 		}
