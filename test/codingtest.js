@@ -5,7 +5,7 @@
 
 	function solution() {
 		let input =
-`6 4`;
+`11 3`;
 		console.log(input);
 		let [size,count] = input.split(' ').map(Number);
 		// 0 ~ size count로 묶어서 덧셈
@@ -14,6 +14,7 @@
 		for (let j = 1; j <= count; j++) {
 			dp[0][j] = 1; 
 		}
+
 		for (let i = 1; i <= size; i++) {
 			for (let j = 1; j <= count; j++) {
 					dp[i][j] = (dp[i][j - 1] + dp[i - 1][j]) % 1000000000;
