@@ -6,7 +6,6 @@
 	function solution() {
 		let input =
 `11 3`;
-		console.log(input);
 		let [size,count] = input.split(' ').map(Number);
 		// 0 ~ size count로 묶어서 덧셈
 		let dp = Array.from({length:size+1},()=> Array.from({length:count+1}).fill(0));
