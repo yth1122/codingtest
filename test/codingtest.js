@@ -6,7 +6,13 @@
 	// 더하기 or 빼기 갯수찾기
 	function solution() {
 		let [start,end] ='5 17'.split(' ').map(Number);
-		console.log(start, end);
+		let result = [];
+		let arr = Array.from({length:end+1}).fill(Infinity);
+		arr[start] = 0;
+		for(let i = start ; i< end+1 ; i++){
+			console.log(i);
+		}
+		console.log(start, end,arr);
 	}	
 
 
