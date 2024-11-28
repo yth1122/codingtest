@@ -18,13 +18,13 @@ function getCombinations(arr, select){
 }
 for(let i=0; i<result.length; i++){
 	let check = false;
-    let count =0;
+  let count =0;
 	for(let j=0; j<num; j++){
 		if(vowel.includes(result[i][j])){
 			check = true;
 		}else{
             count++;
-        }
+    }
 	}
 	if(check && count>=2) console.log(result[i].join(''));
 }
