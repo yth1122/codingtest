@@ -7,13 +7,11 @@
 	function solution() {
 		let [start,end] ='5 17'.split(' ').map(Number);
 		let result = [];
-		let arr = Array.from({length:end+1}).fill(Infinity);
-		arr[start] = 0;
-		for(let i = start ; i< end+1 ; i++){
-			console.log(i);
-		}
-		console.log(start, end,arr);
-		
+		function bfs(val,count){
+			console.log(val,count);
+		};
+
+		bfs(start,0);
 		
 	}	
 
