@@ -9,10 +9,16 @@
 		let result = [];
 		function bfs(val,count){
 			console.log(val,count);
+			if(val == end){
+				result.push(count);
+			}else{
+				
+			}
 		};
 
+
 		bfs(start,0);
-		
+		// 
 	}	
 
 
