@@ -12,7 +12,9 @@
 			if(val == end){
 				result.push(count);
 			}else{
-				
+				bfs(val*2,count+1);
+				bfs(val-1,count+1);
+				bfs(val+1,count+1);
 			}
 		};
 
