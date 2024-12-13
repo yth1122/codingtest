@@ -6,21 +6,15 @@
 	// 더하기 or 빼기 갯수찾기
 	function solution() {
 		let [start,end] ='5 17'.split(' ').map(Number);
+		let visit = Array.from({length:100001}).fill(false);
+		let queue = [];
 		let result = [];
-		function bfs(val,count){
+		queue.push([start,0]);
+		visit[start] = true;
+		while(queue.length){
+			let [val,count] = queue.shift();
 			console.log(val,count);
-			if(val == end){
-				result.push(count);
-			}else{
-				bfs(val*2,count+1);
-				bfs(val-1,count+1);
-				bfs(val+1,count+1);
-			}
-		};
-
-
-		bfs(start,0);
-		// 
+		}	
 	}	
 
 
