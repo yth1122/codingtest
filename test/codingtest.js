@@ -3,13 +3,22 @@
 		console.log(solution());
 	}
 	function solution() {
-		// 1107 리모컨
-		let [goal , count , brokenArray] = `500000
-8
-0 2 3 4 6 7 8 9`.split('\n');
-		brokenArray.split(' ').map(Number);
-		console.log(goal,brokenArray);
-
+		// 1929 소수구하기 https://www.acmicpc.net/problem/1929
+		let [start ,end] =
+`3 16`.split(' ').map(Number);
+		console.log(start,end);
+		let check = [2,3,5,7];
+		for(let i = start ; i <= end; i++){
+			let bool = false;
+			for(let j=0; j<check.length; j++){
+				if(i == check[j]){
+				}else if(i % check[j] == 0){
+					bool = true;	
+					break;
+				}
+			}
+			if(!bool) console.log(i);
+		}
 	}	
 
 
