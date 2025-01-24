@@ -3,24 +3,28 @@
 		console.log(solution());
 	}
 	function solution() {
-		// 1929 소수구하기 https://www.acmicpc.net/problem/1929
-		let [start ,end] =
-`3 16`.split(' ').map(Number);
-		console.log(start,end);
-		let check = [2,3,5,7];
-		for(let i = start ; i <= end; i++){
-			let bool = false;
-			for(let j=0; j<check.length; j++){
-				if(i == check[j]){
-				}else if(i % check[j] == 0){
-					bool = true;	
-					break;
-				}
-			}
-			if(!bool) console.log(i);
-		}
+		// 1931 회의실 배정 https://www.acmicpc.net/problem/1931
+		let input =
+`11
+1 4
+3 5
+0 6
+5 7
+3 8
+5 9
+6 10
+8 11
+8 12
+2 13
+12 14`.split('\n');
+		input.shift();
+		input.sort((a,b)=>{
+			let [startA,endA] = a.split(' ').map(Number);
+			let [startB,endB] = b.split(' ').map(Number);
+			return (endA-startA) - (endB-startB);	
+		})
+		console.log(input);
 	}	
-
 
 module.exports = test;
 
