@@ -21,7 +21,8 @@
 		input.sort((a,b)=>{
 			let [startA,endA] = a.split(' ').map(Number);
 			let [startB,endB] = b.split(' ').map(Number);
-			return (endA-startA) - (endB-startB);	
+			if(startA == startB) return endA - endB
+			return startA - startB;	
 		})
 		console.log(input);
 	}	
